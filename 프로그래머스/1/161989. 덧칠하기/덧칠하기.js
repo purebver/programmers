@@ -1,13 +1,11 @@
-function solution(n, m, section) {
-    let arr = new Array(n).fill(1);
-    let result = 0;
-    section.forEach(a => {
-        if(arr[a - 1] !== 0){
-            result++;
-            for(let i = 0; i < m; i++){
-                arr[a - 1 + i] = 0;
-            }
+function solution(n, m, sections) {
+    var answer = 0;
+    var painted = 0;
+    for(var section of sections) {
+        if(painted < section) {
+            answer++;
+            painted = section+m-1;
         }
-    })
-    return result;
+    }
+    return answer;
 }
