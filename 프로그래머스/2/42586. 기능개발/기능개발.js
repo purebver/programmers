@@ -27,5 +27,4 @@ function solution(progresses, speeds) {
     }
     result.push(result_count);
     return result;
-    
 }
