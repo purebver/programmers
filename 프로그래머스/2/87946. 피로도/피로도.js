@@ -22,7 +22,6 @@ function solution(k, dungeons) {
         return max;
     }
     const max = cal(k, obj, dungeons, 0, 0)
-    console.log(max+"일단 대기 순열사용으로 전환할것")
     return max;
 }
 
