@@ -1,5 +1,4 @@
 function solution(rows, columns, queries) {
-    //[a, b] = (a - 1) * columns + b
     const cal = (y, x, temp) => {
         const new_temp = memo.get(`${x},${y}`) ?? (y - 1) * columns + x
         memo.set(`${x},${y}`, temp);
